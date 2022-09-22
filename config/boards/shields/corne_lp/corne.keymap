@@ -46,7 +46,7 @@
    &mt ESC TAB &kp Q &kp W &kp E   &kp R   &kp T        &kp Y &kp U  &kp I     &kp O   &kp P    &kp DEL
    &td0        &kp A &kp S &kp D   &kp F   &kp G        &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LCTRL   &kp Z &kp X &kp C   &kp V   &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &trans
-                   &tog L3    &kp SPACE   &kp ENTER     &kp BSPC &mo 1 &mo 2
+                   &tog L3    &kp SPACE   &kp ENTER      &kp RET &mo 1 &mo 2
                         >;
                 };
 
@@ -57,11 +57,11 @@
 // |    |    |  '  |  \  |  ]  |      |         |  -  |  [  |  ]  |     |      |  BT_1   |
 //                 | ALT |     |      |         |     |     |     |
 
-                       bindings = <
-   &kp TAB  &trans  &kp HOME  &kp UP    &kp END   &kp PG_UP       &kp EQUAL  &kp LBRC  &kp RBRC  &trans  &trans   &bt BT_CLR
-   &trans   &trans  &kp LEFT &kp DOWN   &kp RIGHT &kp PAGE_DOWN   &kp MINUS  &kp LPAR  &kp RPAR  &trans  &trans   &bt BT_SEL 0
-   &trans   &trans  &kp SQT  &kp BSLH   &kp RBKT  &trans          &trans     &kp LBKT  &kp RBKT  &trans  &trans   &bt BT_SEL 1
-                   &kp LALT  &kp SPACE   &kp ENTER                &trans  &trans  &trans 
+                        bindings = <
+   &kp TAB   &trans  &kp HOME  &kp UP   &kp END     &kp PG_UP       &kp EQUAL  &kp LBRC   &kp RBRC &trans  &trans  &bt BT_CLR
+   &trans   &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DOWN     &kp MINUS  &kp LPAR  &kp RPAR  &trans  &trans  &bt BT_SEL 0
+   &trans &trans    &kp SQT   &kp BSLH  &kp RBKT   &trans          &trans     &kp LBKT  &kp RBKT  &trans  &trans  &bt BT_SEL 1
+                              &kp LALT  &trans    &trans          &tarns     &trans      &trans
                         >;
                 };
 
@@ -88,9 +88,9 @@
 //                   |      |SPACE|ENTER|         |BKSPC| L1  |     |
 
                         bindings = <
-   &trans      &kp N1        &kp N2        &kp N3    &kp N4    &kp N5        &kp N6    &kp N7  &kp N8    &kp N9   &kp N0   &trans
-   &kp F1      &kp F2        &kp F3        &kp F4   &kp F5     &kp F6        &kp F7  &kp F8   &kp F9     &kp F10  &kp F11  &kp F12
-   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &trans    &trans     &trans        &trans   &trans  &kp COMMA  &kp DOT  &kp FSLH  &trans 
+   &trans      &kp N1        &kp N2         &kp N3    &kp N4    &kp N5      &kp N6    &kp N7  &kp N8    &kp N9   &kp N0   &trans
+   &kp F1      &kp F2        &kp F3         &kp F4   &kp F5     &kp F6      &kp F7  &kp F8   &kp F9     &kp F10  &kp F11  &kp F12
+   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &trans    &trans    &trans      &trans   &trans  &kp COMMA  &kp DOT  &kp FSLH  &trans 
                             &trans   &kp SPACE  &kp ENTER        &kp RET   &mo 1    &trans
                         >;
                 };
